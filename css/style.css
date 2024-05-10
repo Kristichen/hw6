@@ -1,0 +1,42 @@
+:root{
+    --selected-text-color: #2196F3;
+    --text-color:#212121;
+    --button-color:#F5F4FA;
+    --footer-color:#2F303A;
+    --smalltext-color:#757575;
+    --bachground-color:#FFFFFF;
+    --border-color:#EEEEEE;
+}
+
+header > a {
+    color: var(--selected-text-color);
+}
+
+ul > a {
+    color: var(--text-color);
+}
+
+.email {
+    color: var(--selected-text-color);
+}
+.phone{
+    color: var(--smalltext-color);
+}
+button{
+    color: var(--button-color);
+}
+h3{
+    color: var(--text-color);
+}
+p{
+    color: var(--smalltext-color);
+}
+footer{
+    background-color: var(--footer-color);
+}
+footer>p{
+    color: var(--bachground-color);
+}
+footer>a{
+    color: var(--bachground-color);
+}
