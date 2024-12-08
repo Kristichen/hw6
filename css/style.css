@@ -1,47 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-:root{
-    --selected-text-color: #2196F3;
-    --text-color:#212121;
-    --button-color:#F5F4FA;
-    --footer-color:#2F303A;
-    --smalltext-color:#757575;
-    --bachground-color:#FFFFFF;
-    --border-color:#EEEEEE;
+:root {
+  --selected-text-color: #2196f3;
+  --text-color: #212121;
+  --button-color: #f5f4fa;
+  --footer-color: #2f303a;
+  --smalltext-color: #757575;
+  --bachground-color: #ffffff;
+  --border-color: #eeeeee;
+  --header-border: #ececec;
 }
 
-body{
-    font-family: "Roboto";
+body {
+  font-family: "Roboto";
 }
-header > a {
-    color: var(--selected-text-color);
+.logo {
+  color: var(--selected-text-color);
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  text-decoration: none;
 }
-
-ul > a {
+.logo-studio-2{
     color: var(--text-color);
 }
+nav {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 1170px;
+    height: 80px;
+  }
+  .header-navigation{
+    border-bottom: 1px solid var(--header-border);
+  }
 
-.email {
+  .header-list {
+    display: flex;
+    width: 281px;
+    justify-content: space-between;
+    margin-left: 93px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .header-email-2{
+    margin-left: 300px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  a:hover{
     color: var(--selected-text-color);
+  }
+  .header-phone-2:hover{
+    cursor: pointer;
+    color: var(--selected-text-color);
+  }
+  .header-email-2:hover{
+    color: var(--selected-text-color);
+  }
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
-.phone{
-    color: var(--smalltext-color);
+
+button {
+  color: var(--button-color);
+}
+.main-button{
+  width: 575px;
+  padding: 94px 0 34px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.button{
+  border: none;
+  border-radius: 4px;
+  height: 38px;
+  padding: 0 22px;
+}
+
+.webstudio-name {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  margin: 20px 24px 0 24px ;
+}
+.webstudio-text{
+  color: var(--smalltext-color);
+  font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.03em;
+margin: 4px 0 0 24px;
+}
+footer {
+  background-color: var(--footer-color);
+}
+p {
+  color: var(--smalltext-color);
+  font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+}
+footer > a {
+  color: var(--bachground-color);
+}
+
+.webstudio-list {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 1272px;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.webstudio-item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid var(--border-color);
+
+}
+
+.logo-studio-footer {
+  color: var(--bachground-color);
+}
+
+.footer-navigation {
+  height: 252px;
+}
+.footer-wrapper {
+  margin: 0 auto;
+  width: 1170px;
+  padding-top: 60px;
+}
+footer p {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+.footer-adress {
+  margin-top: 20px;
+  color: var(--bachground-color);
 }
 button{
-    color: var(--button-color);
+  color: var(--text-color);
+  font-weight: 500;
+font-size: 16px;
+line-height: 162%;
+letter-spacing: 0.03em;
+
 }
-h3{
-    color: var(--text-color);
-}
-p{
-    color: var(--smalltext-color);
-}
-footer{
-    background-color: var(--footer-color);
-}
-footer>p{
-    color: var(--bachground-color);
-}
-footer>a{
-    color: var(--bachground-color);
+button:hover{
+  cursor: pointer;
+  color: var(--bachground-color);
+  background-color: var(--selected-text-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
